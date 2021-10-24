@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width,initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+        <title>Rádio Surdo</title>
+
+
+    </head>
+
+    <body background="imagens/jor.jpg">
+        
+        <div class="cabecalho">
+            <h3>Espaço Itaú apresenta:</h3>
+        </div>
+         
+        <div class="cima">
+            <div class="imagem">
+                <img src="imagens/itausom-unscreen.gif" alt="Simbolo itau dentro do Disco girando ">
+            </div> 
+            
+            <div class="radiosurdo">
+                <i><h1>RÁDIO<br>SURDO</h1></i>
+            </div>
+        </div>
+            
+            
+
+        <div class="texto">
+            <b>Olá visitante, seja bem vindo ao nosso site Itaú Radio surdo. 
+               Quer fazer parte do nosso time?</p> 
+               Faça seu pré-cadastro abaixo e em breve entraremos em contato.
+            
+            Fiquem de olho no seu contato e-mail e telefone.</p>
+            Venha sentir vibração conosco!</b>
+        </div>
+
+            
+        <div class="fichadodecadastro">
+            <h1>Ficha de Cadastro</h1>
+        </div>
+
+        <form class="formulario" action="" method="POST" name="register" onsubmit=" return cadastrar()">
+        <fieldset class="Surdo">
+                <legend>Você é:</legend>
+                <select class="selection-surdoouvinte">
+                    <option value="selecionar" selected>Selecione</option>
+                    <option value="surdo">Surdo(a)</option>
+                    <option value="ouvinte">Ouvinte</option>
+                </select>           
+       </fieldset>
+       
+
+        <div class="linha1">
+            <div class="nome">
+                <label for="nome">Nome Completo</label><br>
+                <input class="campo" type="text" id="nome" name="nome" placeholder="Nome Completo" style="width: 400px; height: 30px;" required>
+            </div>
+
+            <div class="nomeSocial">
+                <label >Nome Social</label><br>
+                <input class="campo" type="text" name="nomeSocial" placeholder="Nome Social" style="width: 200px; height: 30px;">
+            </div>
+        </div>
+
+
+        <div class="linha2">
+            <div class="cpf">
+                <label for="cpf">CPF</label><br>
+                <input class="campo" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" style="width: 200px; height: 30px;" required maxlength="11">       
+            </div>
+
+            <div class="rg">
+                <label for="rg">RG</label><br>
+                <input class="campo" type="text" id="rg" name="rg" placeholder="00.000.000-0" style="width: 150px; height: 30px;" maxlength="9">
+            </div>
+
+            <div class="sexo">
+                <label for="genero">Gênero</label><br>
+                <select name="genero" id="genero">
+                    <option value="selecione" selected>Selecione</option>
+                    <option value="masculino">M</option>
+                    <option value="feminino">F</option>
+                </select>
+            </div>
+
+            <div class="data">
+                <label for="data">Data de nascimento</label><br>
+                <input class="campo" type="date" id="data" name="dataDeNascimento" placeholder="00/00/0000" style="width: 180px; height:30px;">
+
+            </div>
+        </div>
+
+
+        <div class="linha3">
+            <div class="endereco">
+                <label for="endereco">Endereço</label><br>
+                <input class="campo" type="text" id="enedereco" name="endereco" placeholder="Ex.: Rua" style="width: 400px; height: 30px;" required>  
+            </div>
+
+            <div class="numero"> 
+                <label for="numero">Número</label><br>
+                <input class="campo" type="text" id="numero" name="numero" style="width: 100px; height: 30px;" required>
+            </div>
+
+            <div class="complemento">
+                <label for="complemento">Complemento</label><br>
+                <input class="campo" type="text" id="complemento" name="complemento" style="width: 200px; height: 30px;">
+
+            </div>
+        </div>
+
+
+        <div class="linha4">
+            <div class="bairro">
+                <label for="bairro">Bairro</label><br>
+                <input class="campo" type="text" id="bairro" name="bairro" style="width: 150px; height: 30px;">
+            </div>
+       
+            <div class="cidade">
+                <label for="cidade">Cidade</label><br>
+                <input class="campo" type="text" id="cidade" name="cidade" style="width: 150px; height:30px;">
+            </div>
+
+            <div class="estado">
+                <label for="estado">Estado</label><br>
+                <input class="campo" id="estado" type="text" name="estado" style="width: 150px; height:30px">
+            </div>
+        </div>
+
+
+        <div class="linha5">
+            <div class="telefoneFixo">
+                <label for="telefoneFixo">Telefone fixo</label><br>
+                <input class="campo" id="telefoneFixo" type="text" name="telefoneFixo" placeholder="(DDD) 0000-0000" style="width: 200px; height:30px;" maxlength="10">
+            </div>
+
+            <div class="telefoneCelular">
+                <label for="telefoneCelular">Telefone Celular</label><br>
+                <input class="campo" type="text" id="telefoneCelular" name="telefoneCelular" placeholder="(DDD) 00000-0000" style="width: 200px; height:30px;" required maxlength="12">
+            </div>
+
+            <div class="email">
+                <label for= "email">E-mail</label><br>
+                <input class="campo" type="text" id="email" name="email" style="width: 350px; height:30px;">
+            </div>
+
+        </div>
+
+        </form>  
+
+        <div class="cadastrar">
+        <input class="btn-cadastrar" type="submit" id="submit" value="Cadastrar" onclick="cadastrar()">
+        </div>
+
+    <script type="text/javascript" src='js/script.js'></script>    
+            
+  </body>
+
+</html>

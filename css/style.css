@@ -1,0 +1,272 @@
+body {
+   
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 0px; 
+    color: white; 
+    font-size: 20px;
+    margin:  0;
+
+    
+}
+
+
+.cabecalho {
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 0 0 20px 20px;
+    background-color: orangered;
+    color: yellow;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.cabecalho:hover{
+    font-size: 20px;
+    transition:0.2s;
+    background-color:orange;
+    padding: 15px 30px;
+}
+
+.cima {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+    
+}
+
+.imagem {
+    display:inline-flex;
+    width:150px;
+    height:150px;
+    padding-right: 15px;
+
+    
+}
+
+.radiosurdo h1{
+    color: rgba(197, 215, 233, 0.911);
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    animation: flicker 1.5s infinite alternate; 
+
+}
+
+
+
+/* flickering animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%,53%, 57%, 100%
+    
+{
+    text-shadow: 0 0 7px rgb(78, 84, 172),
+    0 0 10px rgb(90, 96, 184), 
+    0 0 21px rgb(78, 84, 172),
+    0 0 42px rgb(0, 15, 230),
+    0 0 82px rgb(0, 15, 230),
+    0 0 92px rgb(0, 15, 230),
+    0 0 102px rgb(0, 15, 230);
+
+}
+20%, 24%, 55% {
+    text-shadow:none;
+ }
+}
+
+/*final animation */
+
+.texto {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.fichadodecadastro h1{
+    color: rgb(255, 217, 1);
+    text-align: center;
+}
+
+.selection-surdoouvinte{
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    padding:5px 10px;
+    width:100%;
+}
+
+.Surdo {
+    color: white;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    justify-content: space-between;
+       
+}
+
+.linha1 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.nome {
+    padding-right: 35px;
+}
+
+.nome label:after{
+    content:"*";
+    margin-left:5px;
+    color:#f00;
+}
+
+.campo {
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+    font-size: 20px;
+    padding:10px;
+}
+
+select{
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+    font-size: 20px;
+    padding:10px;
+    margin-top:5px;
+}
+
+.linha2{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.cpf {
+    padding-right: 35px;
+}
+
+.cpf label:after{
+    content:"*";
+    margin-left:5px;
+    color:#f00;
+}
+
+.rg {
+    padding-right: 35px;
+}
+
+.sexo {
+    padding-right: 35px;
+}
+
+
+.linha3 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.endereco {
+    padding-right: 35px;
+}
+
+.endereco label:after{
+    content:"*";
+    margin-left:5px;
+    color:#f00;
+}
+
+.numero {
+    padding-right: 35px;
+}
+
+.numero label:after{
+    content:"*";
+    margin-left:5px;
+    color:#f00;
+}
+
+.linha4 {
+    
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.bairro {
+    padding-right: 35px;
+}
+
+.cidade {
+    padding-right: 35px;
+}
+
+.linha5 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.telefoneFixo {
+    padding-right: 35px;
+}
+
+.telefoneCelular {
+    padding-right: 35px;
+}
+
+.telefoneCelular label:after{
+    content:"*";
+    margin-left:5px;
+    color:#f00;
+}
+
+
+.btn-cadastrar {
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0 50px 0;
+    cursor: pointer;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    opacity:none;
+}
+
+.btn-cadastrar:hover{
+    font-size: 22px;
+    transition:0.2s;
+    background-color:orange;
+    padding: 15px 30px;
+    color:black;
+    font-weight: bold;
+    border:none;
+    opacity:none;
+}
+
+.cadastrar {
+    justify-content: center;
+    display: flex;   
+}
+
+
+    
+
+
+
+
+    
+   
+
+
+
+
+
+
